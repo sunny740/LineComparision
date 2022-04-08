@@ -2,4 +2,4 @@
 //Console.WriteLine("Hello, World!");
 using LineComparisionComputation;
 LineComparisionProgram line = new LineComparisionProgram();
-line.Welcome();
+line.length();
