@@ -8,29 +8,19 @@ namespace LineComparisionComputation
 {
     public class LineComparisionProgram
     {
-        public void length()
+        int x1, x2, y1, y2;
+        public LineComparisionProgram(int x1, int x2, int y1, int y2)
         {
-            Console.WriteLine("This is UC1-Length OF Line");
-            Console.WriteLine();
-            Console.WriteLine("Enter the coordinates");
-
-            double x1, y1, x2, y2, length;
-
-            Console.WriteLine("enter x1: ");
-            x1 = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("enter y1: ");
-            y1 = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("enter x2: ");
-            x2 = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("enter y2: ");
-            y2 = Convert.ToDouble(Console.ReadLine());
-
-            length = Math.Sqrt(((x2 - x1) * (x2 - x1)) + ((y2 - y1) * (y2 - y1)));
-            Console.WriteLine("Length of line is: " + length);
-            Console.ReadLine();
+            this.x1 = x1;
+            this.x2 = x2;
+            this.y1 = y1;
+            this.y2 = y2;
+        }
+        public Double Equality()
+        {
+            double result = Math.Sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2);
+            Console.WriteLine("Length of the Cartesian Line:" + " " + result);
+            return result;
         }
     }
 }
