@@ -8,13 +8,13 @@ namespace LineComparisionComputation
         {
             LineComparisionProgram line1 = new LineComparisionProgram(3, 9, 2, 5);
             double l1 = line1.CalculationOfLength();
-            LineComparisionProgram line2 = new LineComparisionProgram(3, 9, 2, 5);
+            LineComparisionProgram line2 = new LineComparisionProgram(3, 9, 2, 9);
             double l2 = line2.CalculationOfLength();
             if (l1.CompareTo(l2) == 0)
             {
                 Console.WriteLine("Both Lines are equals ");
             }
-            if (l1.CompareTo(l2) > 0)
+            else if (l1.CompareTo(l2) > 0)
             {
                 Console.WriteLine(" Line-1 Is Greater! ");
             }
